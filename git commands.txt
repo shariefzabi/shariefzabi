@@ -1,0 +1,55 @@
+1) ls(to list all the files in git bash)
+2) ls -lart(to list all the hidden  files in git bash)
+3) git add :to add the files 
+4) git commit -m":     comit is" to cmmit the files
+5) git status : to check the status of the git
+6) git status -s:for simplified status
+7) git checkout <filename> : to revert tp last commit
+8) git checkout -f to revert all files tp last commit
+9) git log : to check the commits
+10) git log -p -1 : to check one commit along with changes
+11)  git diff : to checkout difference between (still need to work) compare untracked files with staged files
+12) git diff --staged: to check uncommited(staged) with commited files
+13) git commit -a -m : to skip the stagiing part(only for updated)
+14) git rm --cached <filename> to remove file form staged area
+15) git rm to remove <to remove file both from staged area anf from working directory>
+
+16) to create branch 
+ git branch <branch name>
+
+17) to check all the branches
+ git branch
+
+18)git checkout <branchname>: to change the branch
+
+19) git checkout -b <branchname>: to crete and to switch to the created branch
+
+19) git restore <file> : still need to work
+
+to add ssh keys go to settings generate and deploy  a shh key you can get the below cammands
+ssh keygen -t rsa -b 4096 -C 'user.email'
+after that
+Agent pid 3856
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+
+
+11) to link remote git with github 
+git remote add origin "url"
+
+12)git remote 
+to check the name of the link
+
+13)to check the push and pulls urls allocated to origin 
+git remote -v
+
+14) to set the url to origin 
+get remote set-url "url"
+
+15) to push the branch to repository
+git push origin master
+ we can write u to write just "git push to by default push to the master branch"
+ like "git push -u origin master"
+
+ 16) to clone the repo 
+ git clone "url of repository" <folder name>
